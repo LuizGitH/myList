@@ -6,6 +6,6 @@ import {
 
 export default function Login (){
     return (
-        <Text> Ola mundo! 2 </Text>
+        <Text> Ola mundo! </Text>
     )
 }
