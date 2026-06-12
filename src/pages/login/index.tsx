@@ -1,27 +1,50 @@
 import React from "react";
 
 import {
-  Text,
-  View,
-  Image
-} from 'react-native';
-import { style } from "./styles";
-import Logo from '../../assets/logo.png';
+    Text,
+    View,
+    Image,
+    TextInput
+} from "react-native";
 
-export default function Login() {
-  return (
-    <View style={style.container}>
-      <View style={style.boxTop}>
-        <Image
-          source={Logo}
-        />
-      </View>
-      <View style={style.boxMid}>
-        <Text>mid</Text>
-      </View>
-      <View style={style.boxBottom}>
-        <Text>bottom</Text>
-      </View>
-    </View>
-  );
+import { style } from "./styles";
+import Logo from "../../assets/logo.png";
+import { MaterialIcons } from "@expo/vector-icons";
+import { themes } from "../../global/themes";
+
+export default function Login (){
+    return (
+        <View style={style.container}>
+            <View style={style.boxTop}>
+                <Image
+                    source={Logo}
+                    style={style.logo}
+                    resizeMode="contain"
+                />
+                <Text style={style.text}>Bem vindo de volta!</Text>
+            </View>
+
+            <View style={style.boxMid}>
+                <Text style={style.titleInput}>ENDEREÇO E-MAIL</Text>
+
+                <View style={style.BoxInput}>
+                    <TextInput
+                        style={style.input}
+                    />
+
+                    <MaterialIcons
+                        name='email'
+                        size={20}
+                        color={themes.colors.gray}
+                    />
+                </View>
+
+                <Text style={style.titleInput}>SENHA</Text>
+                <TextInput />
+            </View>
+
+            <View style={style.boxBottom}>
+            </View>
+        </View>
+    )
 }
