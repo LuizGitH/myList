@@ -19,7 +19,7 @@ export const style = StyleSheet.create({
   boxMid: {
     height: Dimensions.get('window').height / 4,
     width: '100%',
-    backgroundColor: 'green',
+    //backgroundColor: 'green',
     paddingHorizontal:37
   },
 
@@ -48,12 +48,17 @@ export const style = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 40,
     marginTop: 10,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal:5,
+    backgroundColor:themas.colors.lightGray,
+    borderColor:themas.colors.lightGray,
   },
   input:{
     height:'100%',
     width:'90%',
-    backgroundColor:'red',
+    //backgroundColor:'red',
     borderRadius: 40
+
   }
 });

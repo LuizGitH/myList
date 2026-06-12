@@ -40,7 +40,17 @@ export default function Login (){
                 </View>
 
                 <Text style={style.titleInput}>SENHA</Text>
-                <TextInput />
+                <View style={style.BoxInput}>
+                    <TextInput
+                        style={style.input}
+                    />
+
+                    <MaterialIcons
+                        name='remove-red-eye'
+                        size={20}
+                        color={themes.colors.gray}
+                    />
+                </View>
             </View>
 
             <View style={style.boxBottom}>
