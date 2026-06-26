@@ -4,15 +4,16 @@ import {
     Text,
     View,
     Image,
-    TextInput
-} from "react-native";
+    TextInput,
+    TouchableOpacity
+} from 'react-native';
 
 import { style } from "./styles";
 import Logo from "../../assets/logo.png";
-import { MaterialIcons } from "@expo/vector-icons";
-import { themes } from "../../global/themes";
+import { MaterialIcons, AntDesign} from '@expo/vector-icons';
+import { themas } from "../../global/themes";
 
-export default function Login (){
+export default function Login() {
     return (
         <View style={style.container}>
             <View style={style.boxTop}>
@@ -31,30 +32,29 @@ export default function Login (){
                     <TextInput
                         style={style.input}
                     />
-
                     <MaterialIcons
                         name='email'
                         size={20}
-                        color={themes.colors.gray}
+                        color={themas.colors.gray}
                     />
                 </View>
-
                 <Text style={style.titleInput}>SENHA</Text>
                 <View style={style.BoxInput}>
                     <TextInput
                         style={style.input}
                     />
-
                     <MaterialIcons
                         name='remove-red-eye'
                         size={20}
-                        color={themes.colors.gray}
+                        color={themas.colors.gray}
                     />
                 </View>
             </View>
-
             <View style={style.boxBottom}>
+                <TouchableOpacity style={style.button}>
+                    <Text style={style.textButton}>Entrar</Text>
+                </TouchableOpacity>
             </View>
         </View>
-    )
+    );
 }

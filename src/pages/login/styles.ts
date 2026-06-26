@@ -26,7 +26,8 @@ export const style = StyleSheet.create({
   boxBottom: {
     height: Dimensions.get('window').height / 3,
     width: '100%',
-    backgroundColor: 'blue'
+    //backgroundColor: 'blue',
+    alignItems:'center',
   },
   logo:{
     width:80,
@@ -59,6 +60,19 @@ export const style = StyleSheet.create({
     width:'90%',
     //backgroundColor:'red',
     borderRadius: 40
+  },
 
+  button: {
+    width: 200,
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: themas.colors.primary,
+    borderRadius: 40,
+  },
+  textButton:{
+    fontSize:16,
+    color:'#FFFF',
+    fontWeight: 'bold'
   }
 });
